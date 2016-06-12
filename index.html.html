@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Keep Scores!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	
+	<body>
+		<p class="intro"> 
+		<button id="getNames"> Enter names</button> <br> 
+		Or carry on anyway.</p>
+		
+		<h1 class="title">Scorekeeper</h1>
+		<p class="rounds">Rounds: <span id="scoreLimit">5</span><input class="hideshow" type="number"></p>
+		<div id="info-wrapper">	
+			<h3 id="name1" class="names">Player 1</h3>			
+			<h3 id="name2" class="names">Player 2</h3>
+
+			<h1 class="score-card"><span id="p1Span">0</span></h1>
+			<h1 class="score-card"><span id="p2Span">0</span></h1>
+			
+			<button class="act-btn" id="p1"> + </button>
+			<button class="act-btn" id="p2"> + </button> 
+
+			<br>
+			
+			<button class="reset-btn" id="reset">Reset </button>
+			<p class="winText"> <span id="winner"></span> </p>
+
+		</div>
+		
+	
+	<script src="script.js"></script>
+
+	</body>
+</html>

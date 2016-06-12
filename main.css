@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Indie+Flower|Cardo|Dawning+of+a+New+Day|Josefin+Sans|Lato');
+
+/* JS Class */
+.win {
+	color: #FF304F;
+}
+
+.hideshow {
+	display: none;
+}
+
+/* Page Styles */
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	color: #9EF5CF;
+	font-size: 20px;
+/*	border:1px solid #111;
+*/}
+
+body {
+	text-align: center;
+	background: #152744;
+}
+
+
+
+.names , .score-card {
+	float:left;
+	width: 50%;
+}
+
+#info-wrapper {
+	margin: 0 auto;
+	width: 80%;
+}
+
+/* Intro */
+
+.intro {
+	margin-top: 40px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#getNames {
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+/* Title */
+.title {
+	padding: 10px 0;
+	font-family: "Dawning of a New Day" ;
+	font-style: italic;
+	letter-spacing: 2px;
+	font-size: 2.5em;
+}
+
+.title:before, .title:after {
+	content: "*";
+	display: inline-block;
+	color: #9EF5CF;
+	position: relative;
+	top: 3px;
+	margin: 0 5px;
+}
+
+/* Rounds */
+
+.rounds {
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+input[type="number"] {
+	width: 30px;
+	background: transparent;
+	border: none;
+	font-family: "Josefin Sans";
+}
+
+.rounds:before , .rounds:after {
+	content: "";
+	display: inline-block ;
+	height: 2px;
+	width: 60px;
+	background: #9EF5CF;
+	position: relative;
+	top:-5px;
+	margin: 0 5px;
+}
+
+#scoreLimit:hover {
+	cursor: pointer;
+}
+
+/* Player Names */
+
+.names {
+	margin-top: 5px;
+	font-family: Lato;
+}
+
+/* Score Cards */
+
+.score-card {
+	margin: 5px 0;
+	
+}
+
+.score-card span {
+	font-size:3rem;
+	font-family: "Josefin Sans";
+	transition: all 0.5s ease;
+	background: #1E6262;
+	display: block;
+	margin: 10px 10%;
+	padding: 15px;
+}
+
+/* Buttons */
+
+button {
+	background: transparent;
+	border: none ;
+}
+
+.act-btn {
+	background: rgba(255,255,255,0.2);
+	font-size: 30px;
+	height: 35px; width: 35px;
+	border-radius: 100%;
+	color: #28C7FA;
+	cursor:pointer;
+}
+#p1 { margin-right: 105px; }
+
+.reset-btn {
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-family: Lato;
+	font-size: 12px;
+	cursor: pointer;
+	color: #FF304F;
+}
+/* Winner text */
+
+.winText {
+	margin-top: 15px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 700px) {
+    .intro {
+		margin-top: 120px;
+    }
+}
